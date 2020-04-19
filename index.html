@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <title>My Cards</title>
+  </head>
+  <body>
+
+<nav>
+    <div class="tag-line">
+      <h1 class="heading">Social Media Dashboard</h1>
+      <p>Total Followers 23,023</p>
+    </div>
+    <div class="mode-icon"></div>
+</nav>
+<div class="container">
+  <div class="box item1 ">
+    <h3> <i class="fab fa-facebook-square"></i> Facebook</h3>
+    <h1>1988</h1>
+    <span>Followers</span>
+    <div class="current">
+        <span>+12 today</span>
+    </div>
+  </div>
+  <div class="box item2 ">
+    <h3><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</h3>
+    <h1>11k</h1>
+    <span>Followers</span>
+    <div class="current">
+        <span>+99 today</span>
+    </div>
+  </div>
+  <div class="box item3 ">
+    <h3><i class="fab fa-twitter" ></i>Twitter</h3>
+    <h1>1044</h1>
+    <span>Followers</span>
+    <div class="current">
+        <span>+12 today</span>
+    </div>
+  </div>
+  <div class="box item4 ">
+    <h3><i class="fab fa-reddit"></i>Reddit</h3>
+    <h1>8239</h1>
+    <span>Followers</span>
+    <div class="current">
+        <span>+144 today</span>
+    </div>
+  </div>
+</div>
+
+<div class="content-heading">
+  <h1>Overview Today</h1>
+</div>
+<div class="container content">
+  <div class="s_box item1 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Page Views</h3>
+      </div>
+      <h2>87</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-facebook"></i>
+        </h3>
+      </div>
+      <h2>-35</h2>
+    </div>
+  </div>
+  <div class="s_box item2 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Likes</h3>
+      </div>
+      <h2>87</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-facebook"></i>
+        </h3>
+      </div>
+      <h2>-35</h2>
+    </div>
+  </div>
+  <div class="s_box item3 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Likes</h3>
+      </div>
+      <h2>5000</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-instagram"></i>
+        </h3>
+      </div>
+      <h2>-35</h2>
+    </div>
+  </div>
+  <div class="s_box item4 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Profile Views</h3>
+      </div>
+      <h2>52k</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-instagram"></i>
+        </h3>
+      </div>
+      <h2>-2257</h2>
+    </div>
+  </div>
+
+</div>
+
+<div class="container content">
+  <div class="s_box item1 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Retweets</h3>
+      </div>
+      <h2>117</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-twitter"></i>
+        </h3>
+      </div>
+      <h2>-3035</h2>
+    </div>
+  </div>
+  <div class="s_box item2 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Likes</h3>
+      </div>
+      <h2>507</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-twitter"></i>
+        </h3>
+      </div>
+      <h2>-3535</h2>
+    </div>
+  </div>
+  <div class="s_box item3 ">
+    <div class="left">
+      <div class="left_h">
+        <h3>Likes</h3>
+      </div>
+      <h2>107</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-reddit"></i>
+        </h3>
+      </div>
+      <h2>-35</h2>
+    </div>
+  </div>
+  <div class="s_box item4 ">
+     <div class="left">
+      <div class="left_h">
+        <h3>Tottle Views</h3>
+      </div>
+      <h2>1407</h2>
+    </div>
+    <div class="right">
+      <div class="right_h">
+        <h3>
+          <i class="fab fa-reddit"></i>
+        </h3>
+      </div>
+      <h2>76</h2>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  const modeIcon = document.querySelector('.mode-icon');
+  const body = document.querySelector('body');
+  const container = document.querySelector('.container');
+  let isDark = true;
+  modeIcon.addEventListener('click',function(){
+  if(isDark){
+    body.style.background = "linear-gradient(to right, #242434, #017c4e)";
+    container.style.background = "linear-gradient(to right, #242434, #017c4e)";
+    isDark=false;
+  }else{
+    body.style.background = "#000";
+    container.style.background = "black";
+    isDark=true;
+  }
+});
+</script>
+  </body>
+</html>
